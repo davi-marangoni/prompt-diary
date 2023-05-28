@@ -9,6 +9,7 @@ Just a simple prompt aplication to test some functions of python and psychopg2
 - Psychopg2 2.9.6
 - PostgreSQL 15.3
 - Docker 24.0.2
+- Docker Compose 2.18.1
 
 ## How to run
 
@@ -49,7 +50,7 @@ services:
       - ./data:/var/lib/postgresql/data
 ```
 ```bash
-$ docker-compose up -d
+$ docker compose up -d
 ```
 
 5. Create the database and table's
