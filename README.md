@@ -1,5 +1,4 @@
 # prompt-diary
-Prompt diary
 
 ## Description
 Just a simple prompt aplication to test some functions of python and psychopg2
@@ -16,20 +15,20 @@ Just a simple prompt aplication to test some functions of python and psychopg2
 1. Clone this repository
 
 ```bash
-git clone git@github.com:davi-marangoni/prompt-diary.git
+$ git clone git@github.com:davi-marangoni/prompt-diary.git
 ```
 
 2. Install the psycopg2 library
 
 ```bash
-pip install psycopg2
+$ pip install psycopg2
 ```
 
 3. Install Docker and Docker Compose
 
 ```bash
- sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
- sudo apt-get install docker-compose-plugin
+ $ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+ $ sudo apt-get install docker-compose-plugin
 ```
 
 4. Create the docker.compose.yml file and run
@@ -50,7 +49,7 @@ services:
       - ./data:/var/lib/postgresql/data
 ```
 ```bash
-docker-compose up -d
+$ docker-compose up -d
 ```
 
 5. Create the database and table's
