@@ -1,6 +1,5 @@
 from database import add_event, list_events
 
-
 menu = """Please select one of the options below:
 
 1) Add an new event.
@@ -20,7 +19,6 @@ def view_events(events):
     for event in events:
         print(f"{event[2]}\n {event[1]}\n\n")
 
-
 while (user_input := input(menu)) != "3":
     if user_input == "1":
         prompt_new_event()
@@ -28,13 +26,3 @@ while (user_input := input(menu)) != "3":
         view_events(list_events())
     else:
         print("\nInvalid option, please select another option!\n")
-
-
-
-
-
-
-
-
-
-
